@@ -1,0 +1,133 @@
+.nav-links {
+  text-align: center;
+  text-decoration: none;
+  display: flex;
+  background-color: navajowhite;
+  padding: 0;
+  margin: 0;
+}
+img {
+  height: 50px;
+  padding: 5px;
+}
+.logo {
+  height: 80px;
+}
+.nav-links li {
+  list-style: none;
+  margin: 5px;
+  padding: 10px;
+}
+.nav-links li a {
+  position: relative;
+  color: black;
+  font-size: 30px;
+  text-decoration: none;
+  margin: 10px;
+  padding: 6px 0;
+}
+.nav-links li a::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  height: 3px;
+  width: 0%;
+  background-color: rgb(252, 154, 9);
+  transition: all 0.4s ease;
+}
+.nav-links li a:hover::before {
+  width: 100%;
+}
+.card-container {
+  display: flex;
+  width: auto;
+  margin: 200px auto;
+}
+.card1 {
+  height: 200px;
+  width: 200px;
+  background-color: black;
+  font-size: 100px;
+  color: white;
+
+  margin-top: 5x;
+}
+.card2 {
+  height: 200px;
+  width: 200px;
+  background-color: black;
+  font-size: 100px;
+  color: white;
+}
+.card3 {
+  height: 200px;
+  width: 200px;
+  background-color: black;
+  font-size: 100px;
+  color: white;
+  margin-top: 5px;
+  align-items: center;
+}
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: start;
+  height: 100vh;
+  position: relative;
+  background-image: url(bg1.png);
+}
+
+.card {
+  width: 200px;
+  height: 300px;
+  background-image: linear-gradient(to top, #e09354, #da9c66, #cd7a32);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, width 0.3s ease, height 0.3s ease;
+  margin: 50px;
+  overflow: hidden;
+  position: relative;
+  size: 30px;
+}
+
+.card:hover {
+  transform: scale(1.1);
+  width: 220px;
+  height: 320px;
+}
+
+.card-content {
+  padding: 20px;
+  text-align: center;
+}
+
+.detail {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgb(216, 163, 93);
+  padding: 10px;
+  transition: height 0.3s ease;
+  height: 0;
+  overflow: hidden;
+}
+.detail button {
+  font-size: 20px;
+  margin-top: 10px;
+  margin-right: 20px;
+  background: transparent;
+}
+.card:hover .detail {
+  height: 50px;
+}
+.navbar {
+  width: 100%;
+  top: 0;
+  position: absolute;
+}
+h1 {
+  margin-top: 5%;
+  margin-left: 10px;
+  font-size: 50px;
+}

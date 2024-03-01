@@ -1,0 +1,134 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  position: relative;
+  background-color: #ed9f67;
+}
+.nav-links {
+  text-align: center;
+  text-decoration: none;
+  display: flex;
+  background-color: navajowhite;
+  padding: 0;
+  margin: 0;
+}
+img {
+  height: 50px;
+  padding: 5px;
+}
+.nav-links li {
+  list-style: none;
+  margin: 5px;
+  padding: 10px;
+}
+.nav-links li a {
+  position: relative;
+  color: black;
+  font-size: 30px;
+  text-decoration: none;
+  margin: 10px;
+  padding: 6px 0;
+}
+.nav-links li a::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  height: 3px;
+  width: 0%;
+  background-color: rgb(252, 154, 9);
+  transition: all 0.4s ease;
+}
+.nav-links li a:hover::before {
+  width: 100%;
+}
+/* this is for main content  */
+.container {
+  text-align: left;
+  position: absolute;
+  height: 600px;
+  width: 80%;
+  left: 150px;
+  top: 130px;
+
+  border-radius: 20px;
+  background-color: #c37843;
+  opacity: 0.7;
+}
+
+.top-title {
+  display: flex;
+  font-size: 35px;
+  background-color: #ff8d3b;
+  border-radius: 5px;
+  margin-bottom: 50px;
+  height: 50px;
+  gap: 70%;
+}
+.top-title p {
+  padding-top: 5px;
+  padding-left: 50px;
+}
+
+.back {
+  margin-top: 6px;
+  text-decoration: none;
+  background-color: red;
+  color: white;
+  height: 37px;
+  width: 100px;
+  font-size: 25px;
+  padding-top: 5px;
+  padding-left: 15px;
+  border-radius: 20px;
+}
+
+.card {
+  display: flex;
+  height: 60px;
+  display: flex;
+  border-radius: 20px;
+  margin-bottom: 30px;
+  margin-left: 130px;
+  width: 80%;
+  background-color: #ffecec;
+  box-shadow: 5px 5px 5px rgb(105, 105, 105);
+  transition: all 0.2s ease;
+}
+.card:hover {
+  transform: scale(1.1);
+  background-color: #ed9f67;
+  color: white;
+}
+.card p a {
+  text-decoration: none;
+  color: black;
+}
+.card p {
+  margin-left: 100px;
+  margin-right: 600px;
+  font-size: 25px;
+  font-weight: bolder;
+  padding-top: 15px;
+}
+.img-arrow2 {
+  margin-left: -37px;
+}
+.img-arrow3 {
+  margin-left: -15px;
+}
+.img-arrow4 {
+  margin-left: -28px;
+}
+
+.card:first-child {
+  margin-top: 140px;
+}
+.logo {
+  margin-top: 5px;
+}

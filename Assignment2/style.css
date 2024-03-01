@@ -1,0 +1,153 @@
+.nav-links{
+  text-align: center;
+  text-decoration: none;
+  display: flex;
+  background-color:navajowhite;
+  padding: 0;
+  margin: 0;
+}
+img{
+  height: 50px;
+  padding: 5px;
+}
+.nav-links li{
+  list-style: none;
+  margin: 5px;
+  padding: 10px;
+}
+.nav-links li a{
+  position: relative;
+  color: black;
+  font-size: 30px;
+  text-decoration: none;
+  margin: 10px;
+  padding: 6px 0;
+}
+.nav-links li a::before{
+  content: '';
+  position: absolute;
+  bottom: 0;
+  height: 3px;
+  width: 0%;
+  background-color: rgb(252, 154, 9);
+  transition:all 0.4s ease;
+}
+.nav-links li a:hover::before{
+  width: 100%;
+}
+
+  body {
+    margin: 0;
+    padding: 0;
+    height: 90vh;
+
+    background: url("photu.png") center/cover  no-repeat;
+    font-family: sans-serif;
+    position: relative;
+  }
+
+  .jomhuria-regular {
+    font-family: serif;
+
+  }
+h1{
+    font-size: 100px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    margin-left: 60%;
+    font-stretch:normal ;
+  }
+h2{
+    font-size: 70px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    margin-left: 68%;
+    font-stretch:normal ;
+}
+button{
+    border-radius: 50px;
+    padding: 0px 5px 0px 5px;
+    font-size: 40px;
+    background-color: #895630;
+    font-style: bold;
+    font-family:serif;
+  
+  }
+
+  .btn1{
+    
+    margin-left: 10px;
+    margin-top: 300px;
+  position: absolute;
+  top: 9cm;
+  left: 27cm;
+  
+  }
+  .btn1 span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+    
+  }
+  
+  .btn1 span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .btn1:hover span {
+    padding-right: 25px;
+  }
+  
+  .btn1:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+  .btn2 span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .btn2 span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .btn2:hover span {
+    padding-right: 25px;
+  }
+  
+  .btn2:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+  .btn2{
+  position: absolute;
+  top: 19cm;
+  left: 27cm;
+  padding-left: 5px;
+  }
+  .logo{
+    margin-left: 25px;
+  }
+
+  .button1 .btn1 button span a{
+
+    text-decoration: none;
+    color: black;
+  }
+  .button1 .btn2 button span a{
+
+    text-decoration: none;
+    color: black;
+  }
+  

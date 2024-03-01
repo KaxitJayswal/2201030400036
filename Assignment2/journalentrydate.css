@@ -1,0 +1,89 @@
+.nav-links {
+  text-align: center;
+  text-decoration: none;
+  display: flex;
+  background-color: navajowhite;
+  padding: 0;
+  margin: 0;
+}
+img {
+  height: 50px;
+  padding: 5px;
+}
+.logo {
+  height: 80px;
+}
+.nav-links li {
+  list-style: none;
+  margin: 5px;
+  padding: 10px;
+}
+.nav-links li a {
+  position: relative;
+  color: black;
+  font-size: 30px;
+  text-decoration: none;
+  margin: 10px;
+  padding: 6px 0;
+}
+.nav-links li a::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  height: 3px;
+  width: 0%;
+  background-color: rgb(252, 154, 9);
+  transition: all 0.4s ease;
+}
+.nav-links li a:hover::before {
+  width: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  /* height: 10vh; */
+  background: url("bg1.png");
+  font-family: sans-serif;
+  height: 100%;
+  width: 100%;
+}
+span {
+  font-size: 40px;
+  text-decoration: underline;
+}
+h1 {
+  font-size: 40px;
+}
+input {
+  padding-bottom: 18px;
+  text-align: center;
+  border-radius: 15px;
+  font-size: 50px;
+  margin-top: 130px;
+  background-color: #ed9f67;
+  font-style: normal;
+  font-variant: small-caps;
+}
+.btn2 {
+  font-size: 40px;
+  margin-top: 250px;
+  border-radius: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-left: 5px;
+}
+.btn1 {
+  font-size: 40px;
+  margin-left: 1120px;
+  padding: 10px;
+  border-radius: 20px;
+}
+.btn .btn1 a {
+  text-decoration: none;
+}
+.btn .btn2 a {
+  text-decoration: none;
+}
